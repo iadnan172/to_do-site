@@ -1,0 +1,5 @@
+stages:
+   - build
+   - test
+   - push_to_dockerhub
+   - deploy
