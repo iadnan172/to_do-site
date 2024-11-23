@@ -3,3 +3,9 @@ stages:
    - test
    - push_to_dockerhub
    - deploy
+
+build-job:
+  stages: build
+  script:
+    - echo "BUILDING PROJECT "
+    
