@@ -2,10 +2,14 @@
 This is a simple to-do web application built using JavaScript. The application is containerized using Docker for easy deployment.
 
 # Requirements
-Node.js
-npm (Node Package Manager)
-npx (Node Package Executor)
-Docker
+  Node.js
+
+  npm (Node Package Manager)
+
+  npx (Node Package Executor)
+  
+  Docker
+
 Installation
 1. Clone the Repository
 
