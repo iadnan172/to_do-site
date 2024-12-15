@@ -1,26 +1,39 @@
-#  To-Do Website
-This To-Do Website is a sleek, modern, and user-friendly task management application designed to help users organize their daily activities effectively. The website features a visually appealing interface with a dynamic gradient background and smooth transitions, providing a delightful user experience.
+# # JavaScript To-Do App with Docker
+This is a simple to-do web application built using JavaScript. The application is containerized using Docker for easy deployment.
 
-# Key Features:
+# Requirements
+Node.js
+npm (Node Package Manager)
+npx (Node Package Executor)
+Docker
+Installation
+1. Clone the Repository
+bash
+Copy code
+git clone <https://github.com/iadnan172/to_do-site.git>
+cd <to-do-site>
+2. Install Dependencies
+Install npm:
+sudo apt-get install npm
 
-Task Management:
-Add tasks to the to-do list.
-Mark tasks as completed with a simple click.
-Delete tasks effortlessly.
+Install npx:
+sudo apt-get install npx
 
-Responsive Design:
-Optimized for all screen sizes, ensuring accessibility on desktops, tablets, and mobile devices.
+3. Build the Docker Image
+Build the Docker image for the to-do app:
+docker build -t node-app:latest .
 
-Interactive UI:
-The vibrant gradient background and hover effects enhance interactivity.
-Clean and intuitive layout for quick navigation.
+4. Run the Docker Container
+Run the container to host your application:
+docker run -d -p 8000:8000 node-app
+
+5. Start the Application
+Start the server using npx:
+
+npx-server .
 
 
-Modern Design:
-Minimalistic card-style container with soft shadows and rounded corners.
-Gradient color schemes and overlay effects inspired by contemporary design trends.
-
-
-Ease of Use:
-Simple input field and button for quick task entry.
-Easy-to-read task list with clearly defined buttons for task actions.
+# Features
+Easy to-do task management with a clean UI.
+Containerized using Docker for portability.
+Simple installation and setup.

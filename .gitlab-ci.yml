@@ -1,11 +1,24 @@
 stages:
-   - build
-   - test
-   - push_to_dockerhub
-   - deploy
+  - build
+  - deploy
+  - test
 
+# Build the Docker image
 build-job:
-  stages: build
+  stage: build
   script:
-    - echo "BUILDING PROJECT "
-    
+    - docker build -t to_do-site .
+
+# Deploy the Docker image to EC2
+deploy-job:
+  stage: deploy
+  script:
+    #- ssh -i /path/to/your/private/key ec2-user@your-ec2-ip "docker run -d -p 8000:8000 to_do-site"
+  only:
+    - main
+
+test-job:
+  stage: test
+  script:
+      - echo "testing ........."
+
